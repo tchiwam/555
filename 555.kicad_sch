@@ -1750,7 +1750,7 @@
   (symbol (lib_id "Device:R") (at 278.13 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00fa8944-2b1f-4fa9-9017-80514ec84070)
-    (property "Reference" "R?" (id 0) (at 280.162 97.79 90))
+    (property "Reference" "R4" (id 0) (at 280.162 97.79 90))
     (property "Value" "5.1k" (id 1) (at 278.13 97.79 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (id 2) (at 276.352 97.79 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -1850,7 +1850,7 @@
   (symbol (lib_id "Device:R") (at 281.94 93.98 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 18ab6926-aa6b-49c0-a18b-1f23dc112c2e)
-    (property "Reference" "R?" (id 0) (at 283.972 93.98 90))
+    (property "Reference" "R5" (id 0) (at 283.972 93.98 90))
     (property "Value" "5.1k" (id 1) (at 281.94 93.98 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (id 2) (at 280.162 93.98 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -2365,7 +2365,7 @@
   (symbol (lib_id "power:GND") (at 281.94 99.06 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 7a7afcf7-9c2f-4d82-ae0b-cb669e335a64)
-    (property "Reference" "#PWR?" (id 0) (at 281.94 105.41 0)
+    (property "Reference" "#PWR0105" (id 0) (at 281.94 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 281.94 102.87 0))
@@ -2714,7 +2714,7 @@
   (symbol (lib_id "power:GND") (at 278.13 102.87 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b2e6477c-ad92-49a7-aece-eea1bc30ca39)
-    (property "Reference" "#PWR?" (id 0) (at 278.13 109.22 0)
+    (property "Reference" "#PWR0104" (id 0) (at 278.13 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 278.13 106.68 0))
@@ -2911,9 +2911,9 @@
   (symbol (lib_id "Connector:USB_C_Receptacle_USB2.0") (at 257.81 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid da6fb2fe-a3cd-40a0-87c3-86aa919378d2)
-    (property "Reference" "J?" (id 0) (at 257.81 76.3102 0))
+    (property "Reference" "J1" (id 0) (at 257.81 76.3102 0))
     (property "Value" "USB_C_Receptacle_USB2.0" (id 1) (at 257.81 78.8471 0))
-    (property "Footprint" "" (id 2) (at 261.62 97.79 0)
+    (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4085" (id 2) (at 261.62 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (id 3) (at 261.62 97.79 0)
@@ -3218,6 +3218,12 @@
     (path "/d2f92b97-ac8e-42a0-a3b8-8af72f998d72"
       (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
+    (path "/b2e6477c-ad92-49a7-aece-eea1bc30ca39"
+      (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/7a7afcf7-9c2f-4d82-ae0b-cb669e335a64"
+      (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
+    )
     (path "/43a05453-035c-453b-be11-f0c5789d3e42"
       (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
     )
@@ -3226,12 +3232,6 @@
     )
     (path "/65e15fc4-9333-4168-a14e-c93ad57ed796"
       (reference "#PWR0108") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/7a7afcf7-9c2f-4d82-ae0b-cb669e335a64"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/b2e6477c-ad92-49a7-aece-eea1bc30ca39"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/f94bea49-4652-41d4-bccc-fb87f892bbde"
       (reference "C1") (unit 1) (value "10uF") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
@@ -3251,11 +3251,11 @@
     (path "/cedbd7dd-f930-4bcb-a3c7-4b48157c47e0"
       (reference "D2") (unit 1) (value "LED") (footprint "LED_THT:LED_D5.0mm")
     )
+    (path "/da6fb2fe-a3cd-40a0-87c3-86aa919378d2"
+      (reference "J1") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "Connector_USB:USB_C_Receptacle_GCT_USB4085")
+    )
     (path "/bd0631f4-de16-4346-98de-2fce907e4abe"
       (reference "J2") (unit 1) (value "Screw_Terminal_01x02") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal")
-    )
-    (path "/da6fb2fe-a3cd-40a0-87c3-86aa919378d2"
-      (reference "J?") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "")
     )
     (path "/bc0347ee-e81a-4fa5-bb35-374b2cb74098"
       (reference "LS1") (unit 1) (value "Speaker") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal")
@@ -3268,6 +3268,12 @@
     )
     (path "/1325489c-0f15-42f5-a95c-f69cce50ffe3"
       (reference "R3") (unit 1) (value "220") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+    )
+    (path "/00fa8944-2b1f-4fa9-9017-80514ec84070"
+      (reference "R4") (unit 1) (value "5.1k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+    )
+    (path "/18ab6926-aa6b-49c0-a18b-1f23dc112c2e"
+      (reference "R5") (unit 1) (value "5.1k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/d88ab312-febf-4aef-8f6e-4613f011a683"
       (reference "R10") (unit 1) (value "2k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
@@ -3373,12 +3379,6 @@
     )
     (path "/a7653562-9956-4d1e-8af1-86a25616276d"
       (reference "R56") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0201_0603Metric")
-    )
-    (path "/00fa8944-2b1f-4fa9-9017-80514ec84070"
-      (reference "R?") (unit 1) (value "5.1k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
-    )
-    (path "/18ab6926-aa6b-49c0-a18b-1f23dc112c2e"
-      (reference "R?") (unit 1) (value "5.1k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/eda38263-0621-4cb0-935b-348e3dbcbc4c"
       (reference "RV1") (unit 1) (value "10k") (footprint "Potentiometer_THT:Potentiometer_TT_P0915N")
