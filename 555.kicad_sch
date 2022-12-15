@@ -3011,7 +3011,7 @@
     (in_bom yes) (on_board yes)
     (uuid eda38263-0621-4cb0-935b-348e3dbcbc4c)
     (property "Reference" "RV1" (id 0) (at 125.73 108.585 90))
-    (property "Value" "10k" (id 1) (at 125.73 106.68 90))
+    (property "Value" "20k" (id 1) (at 125.73 106.68 90))
     (property "Footprint" "Potentiometer_THT:Potentiometer_TT_P0915N" (id 2) (at 125.73 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3100,7 +3100,7 @@
     (property "Reference" "C1" (id 0) (at 133.35 120.65 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10uF" (id 1) (at 132.08 113.665 0)
+    (property "Value" "1uF" (id 1) (at 132.08 113.665 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" (id 2) (at 138.1252 121.92 0)
@@ -3234,7 +3234,7 @@
       (reference "#PWR0108") (unit 1) (value "+5V") (footprint "")
     )
     (path "/f94bea49-4652-41d4-bccc-fb87f892bbde"
-      (reference "C1") (unit 1) (value "10uF") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
+      (reference "C1") (unit 1) (value "1uF") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
     )
     (path "/647969e2-18be-4c4f-a5bd-0b278ed920c4"
       (reference "C2") (unit 1) (value "10uF") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
@@ -3381,7 +3381,7 @@
       (reference "R56") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0201_0603Metric")
     )
     (path "/eda38263-0621-4cb0-935b-348e3dbcbc4c"
-      (reference "RV1") (unit 1) (value "10k") (footprint "Potentiometer_THT:Potentiometer_TT_P0915N")
+      (reference "RV1") (unit 1) (value "20k") (footprint "Potentiometer_THT:Potentiometer_TT_P0915N")
     )
     (path "/6e101411-4ba4-4c62-be46-5c987ad8894a"
       (reference "SW1") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_PUSH_6mm")
